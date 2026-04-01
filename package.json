@@ -1,0 +1,11 @@
+{
+  "name": "mgym-web",
+  "version": "1.0.0",
+  "description": "Utilities for MGym static site (image conversion)",
+  "scripts": {
+    "images:build": "node scripts/convert-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
+  }
+}

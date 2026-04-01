@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MGym — Miraflores</title>
+    <meta name="description"
+        content="MGym - Entrenamiento, membresías y clases. Conoce la ubicación, galería y nuestras marcas." />
+    <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<!-- PRUEBA MGYM -->
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#home" aria-label="MGym">
+                <img class="brand__logo" src="./assets/logo2.png" alt="MGym logo" />
+                <span class="brand__name">MGym</span>
+            </a>
+
+            <!-- Menú responsive (CSS only) -->
+            <input id="nav-toggle" class="nav__toggle" type="checkbox" aria-label="Abrir menú" />
+            <label class="nav__burger" for="nav-toggle" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#home">Home</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#galeria">Galería de Fotos</a>
+                <a href="#marcas">Nuestras Marcas</a>
+                <a href="#membresias">Membresías</a>
+                <a class="btn btn--small" href="#contacto">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <main id="home" class="hero">
+        <div class="container hero__grid">
+            <div class="hero__content">
+                <div class="pill">MGym · Gimnasio & Fitness</div>
+                <h1>REGRESA MAS FUERTE QUE AYER. <span class="accent">Entrena ya.</span></h1>
+                <p>
+                    Membresías y clases por hora , cansado de las colas entrena en un ambiente despejado.
+                    Un espacio pensado para rendimiento, constancia y comunidad.
+                </p>
+
+                <div class="hero__actions">
+                    <a class="btn" href="#ubicacion">Ver ubicación</a>
+                    <a class="btn btn--ghost" href="#galeria">Ver galería</a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat__num">20+</div>
+                        <div class="stat__label">Máquinas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__num">2</div>
+                        <div class="stat__label">Instructores internos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__num">Clases</div>
+                        <div class="stat__label">por horas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__card">
+                <div class="hero__cardTop">
+                    <div class="hero__badge">MGym</div>
+                    <div class="hero__mini">Horario sugerido</div>
+                </div>
+
+                <div class="schedule">
+                    <div class="row"><span>Lun–Vie</span><strong>6:00 am – 10:00 pm</strong></div>
+                    <div class="row"><span>Sábados</span><strong>7:00 am – 5:00 pm</strong></div>
+                    <div class="row"><span>Domingos y feriados</span><strong>8:00 am – 3:00 pm</strong></div>
+                </div>
+
+                <div class="cardCTA">
+                    <p><strong>¿Listo para empezar?</strong> Agenda una visita o solicita info.</p>
+                    <button class="btn btn--block" type="button" onclick="openChat()">Hablar con el agente</button>
+                    <small class="muted">* Chat online</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="section">
+        <div class="container">
+            <div class="section__head">
+                <h2>Ubicación</h2>
+                <p>Encuéntranos en Surquillo. (Actualiza dirección y enlace del mapa).</p>
+            </div>
+
+            <div class="location">
+                <div class="location__info">
+                    <div class="card">
+                        <h3>MGym Surquillo</h3>
+                        <p class="muted">
+                            Dirección: <strong>Av. Ricardo Palma 156 Surquillo, Lima</strong><br />
+                            Referencia: A solo una cuadra de la vía expresa
+                        </p>
+
+                        <div class="location__grid">
+                            <div class="chip">🚗 Estacionamiento cercano</div>
+                            <div class="chip">🧼 Zona de higiene</div>
+                            <div class="chip">🥤 Hidratación</div>
+                            <div class="chip">🧑‍🏫 Clases guiadas</div>
+                        </div>
+
+                        <div class="location__actions">
+                            <a class="btn" target="_blank" rel="noopener"
+                                href="https://www.google.com/maps?q=Miraflores,Lima">
+                                Abrir en Google Maps
+                            </a>
+                            <button class="btn btn--ghost" type="button" onclick="openChat()">Consultar planes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location__map card">
+                    <!-- Reemplaza el src con el embed real de tu ubicación -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4840.5688535723875!2d-77.02754042401928!3d-12.119053143252826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81a7eec4baf%3A0x4c32461f175c6d5!2sAv.%20Ricardo%20Palma%20156%2C%20Surquillo%2015047!5e1!3m2!1ses!2spe!4v1765841725877!5m2!1ses!2spe"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section section--alt">
+        <div class="container">
+            <div class="section__head">
+                <h2>Galería de Fotos</h2>
+                <p>Agradable ambiente y las mejores marcas.</p>
+            </div>
+
+            <div class="gallery" id="gallery">
+                <figure class="gallery__item" data-index="0">
+                    <img class="gallery__thumb enhance" src="assets/maquinas1-lqip.jpg" data-thumb="./assets/maquinas1.jpg" data-full="assets/maquinas1.webp" alt="Área de máquinas MGym" loading="lazy" decoding="async" srcset="assets/maquinas1-lqip.jpg 40w, assets/maquinas1.webp 600w, assets/maquinas1.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Área de máquinas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="1">
+                    <img class="gallery__thumb enhance" src="assets/maquinas2-lqip.jpg" data-thumb="./assets/maquinas2.jpg" data-full="assets/maquinas2.webp" alt="Zona de pesas MGym" loading="lazy" decoding="async" srcset="assets/maquinas2-lqip.jpg 40w, assets/maquinas2.webp 600w, assets/maquinas2.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Zona de pesas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="2">
+                    <img class="gallery__thumb enhance" src="assets/maquinas3-lqip.jpg" data-thumb="./assets/maquinas3.jpg" data-full="assets/maquinas3.webp" alt="Entrenamiento guiado MGym" loading="lazy" decoding="async" srcset="assets/maquinas3-lqip.jpg 40w, assets/maquinas3.webp 600w, assets/maquinas3.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Entrenamiento guiado</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="3">
+                    <img class="gallery__thumb enhance" src="assets/maquinas4-lqip.jpg" data-thumb="./assets/maquinas4.jpg" data-full="assets/maquinas4.webp" alt="Ambiente MGym" loading="lazy" decoding="async" srcset="assets/maquinas4-lqip.jpg 40w, assets/maquinas4.webp 600w, assets/maquinas4.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Ambiente</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="4">
+                    <img class="gallery__thumb enhance" src="assets/maquinas5-lqip.jpg" data-thumb="./assets/maquinas5.jpg" data-full="assets/maquinas5.webp" alt="Área de máquinas MGym" loading="lazy" decoding="async" srcset="assets/maquinas5-lqip.jpg 40w, assets/maquinas5.webp 600w, assets/maquinas5.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Área de máquinas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="5">
+                    <img class="gallery__thumb enhance" src="assets/maquinas6-lqip.jpg" data-thumb="./assets/maquinas6.jpg" data-full="assets/maquinas6.webp" alt="Zona de pesas MGym" loading="lazy" decoding="async" srcset="assets/maquinas6-lqip.jpg 40w, assets/maquinas6.webp 600w, assets/maquinas6.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Zona de pesas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="6">
+                    <img class="gallery__thumb enhance" src="assets/maquinas7-lqip.jpg" data-thumb="./assets/maquinas7.jpg" data-full="assets/maquinas7.webp" alt="Entrenamiento guiado MGym" loading="lazy" decoding="async" srcset="assets/maquinas7-lqip.jpg 40w, assets/maquinas7.webp 600w, assets/maquinas7.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Entrenamiento guiado</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="7">
+                    <img class="gallery__thumb enhance" src="assets/maquinas8-lqip.jpg" data-thumb="./assets/maquinas8.jpg" data-full="assets/maquinas8.webp" alt="Ambiente MGym" loading="lazy" decoding="async" srcset="assets/maquinas8-lqip.jpg 40w, assets/maquinas8.webp 600w, assets/maquinas8.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Ambiente</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="8">
+                    <img class="gallery__thumb enhance" src="assets/maquinas9-lqip.jpg" data-thumb="./assets/maquinas9.jpg" data-full="assets/maquinas9.webp" alt="Área de máquinas MGym" loading="lazy" decoding="async" srcset="assets/maquinas9-lqip.jpg 40w, assets/maquinas9.webp 600w, assets/maquinas9.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Área de máquinas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="9">
+                    <img class="gallery__thumb enhance" src="assets/maquinas10-lqip.jpg" data-thumb="./assets/maquinas10.jpg" data-full="assets/maquinas10.webp" alt="Zona de pesas MGym" loading="lazy" decoding="async" srcset="assets/maquinas10-lqip.jpg 40w, assets/maquinas10.webp 600w, assets/maquinas10.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Zona de pesas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="10">
+                    <img class="gallery__thumb enhance" src="assets/maquinas11-lqip.jpg" data-thumb="./assets/maquinas11.jpg" data-full="assets/maquinas11.webp" alt="Entrenamiento guiado MGym" loading="lazy" decoding="async" srcset="assets/maquinas11-lqip.jpg 40w, assets/maquinas11.webp 600w, assets/maquinas11.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Entrenamiento guiado</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="11">
+                    <img class="gallery__thumb enhance" src="assets/maquinas12-lqip.jpg" data-thumb="./assets/maquinas12.jpg" data-full="assets/maquinas12.webp" alt="Ambiente MGym" loading="lazy" decoding="async" srcset="assets/maquinas12-lqip.jpg 40w, assets/maquinas12.webp 600w, assets/maquinas12.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Ambiente</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="12">
+                    <img class="gallery__thumb enhance" src="assets/maquinas13-lqip.jpg" data-thumb="./assets/maquinas13.jpg" data-full="assets/maquinas13.webp" alt="Área de máquinas MGym" loading="lazy" decoding="async" srcset="assets/maquinas13-lqip.jpg 40w, assets/maquinas13.webp 600w, assets/maquinas13.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Área de máquinas</figcaption>
+                </figure>
+                <figure class="gallery__item" data-index="13">
+                    <img class="gallery__thumb enhance" src="assets/maquinas14-lqip.jpg" data-thumb="./assets/maquinas14.jpg" data-full="assets/maquinas14.webp" alt="Zona de pesas MGym" loading="lazy" decoding="async" srcset="assets/maquinas14-lqip.jpg 40w, assets/maquinas14.webp 600w, assets/maquinas14.webp 1200w" sizes="(max-width:760px) 100vw, 50vw">
+                    <figcaption class="gallery__caption">Zona de pesas</figcaption>
+                </figure>
+            </div>
+
+            <!-- Lightbox accesible -->
+            <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galería de imágenes">
+                <div class="lightbox__overlay" data-action="close" tabindex="-1"></div>
+                <button class="lightbox__close" aria-label="Cerrar galería">×</button>
+                <button class="lightbox__nav lightbox__nav--prev" aria-label="Imagen anterior">‹</button>
+                <div class="lightbox__content">
+                    <img class="lightbox__image" src="" alt="">
+                    <div class="lightbox__caption" aria-live="polite"></div>
+                </div>
+                <button class="lightbox__nav lightbox__nav--next" aria-label="Siguiente imagen">›</button>
+            </div>
+
+            <script>
+                (function(){
+                    const thumbs = Array.from(document.querySelectorAll('.gallery__item'));
+                    const lightbox = document.getElementById('lightbox');
+                    const lbImage = lightbox.querySelector('.lightbox__image');
+                    const lbCaption = lightbox.querySelector('.lightbox__caption');
+                    const btnClose = lightbox.querySelector('.lightbox__close');
+                    const btnPrev = lightbox.querySelector('.lightbox__nav--prev');
+                    const btnNext = lightbox.querySelector('.lightbox__nav--next');
+                    let current = 0;
+                    let lastFocused = null;
+                    const pageRoots = Array.from(document.querySelectorAll('header, main, section, footer, nav'));
+
+                    function setInert(val){
+                        pageRoots.forEach(el => {
+                            if(val) el.setAttribute('aria-hidden','true'); else el.removeAttribute('aria-hidden');
+                        });
+                    }
+
+                    function getFocusable(container){
+                        return Array.from(container.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'))
+                            .filter(el => el.offsetParent !== null);
+                    }
+
+                    function show(index){
+                        const item = thumbs[index];
+                        const img = item.querySelector('img');
+                        const full = img.dataset.full || img.src;
+                        lbImage.alt = img.alt || '';
+                        lbImage.classList.remove('enhance');
+                        // show thumbnail first while full image loads
+                        lbImage.src = img.src;
+                        // load high-res
+                        const high = new Image();
+                        high.src = full;
+                        high.onload = () => { lbImage.src = full; lbImage.classList.add('enhance'); };
+                        lbCaption.textContent = item.querySelector('.gallery__caption')?.textContent || img.alt || '';
+                        current = index;
+                    }
+
+                    function open(index){
+                        lastFocused = document.activeElement;
+                        show(index);
+                        lightbox.setAttribute('aria-hidden', 'false');
+                        setInert(true);
+                        btnClose.focus();
+                        document.body.style.overflow = 'hidden';
+                        document.addEventListener('keydown', trapTab);
+                    }
+
+                    function close(){
+                        lightbox.setAttribute('aria-hidden', 'true');
+                        setInert(false);
+                        if(lastFocused) lastFocused.focus();
+                        document.body.style.overflow = '';
+                        document.removeEventListener('keydown', trapTab);
+                    }
+
+                    function trapTab(e){
+                        if(lightbox.getAttribute('aria-hidden') === 'true') return;
+                        if(e.key === 'Tab'){
+                            const focusable = getFocusable(lightbox);
+                            if(focusable.length === 0){ e.preventDefault(); return; }
+                            const first = focusable[0], last = focusable[focusable.length-1];
+                            if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+                            else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+                        }
+                        if(e.key === 'Escape') close();
+                        if(e.key === 'ArrowLeft') btnPrev.click();
+                        if(e.key === 'ArrowRight') btnNext.click();
+                    }
+
+                    thumbs.forEach((fig, i) => {
+                        const img = fig.querySelector('img');
+                        img.tabIndex = 0;
+                        img.addEventListener('click', () => open(i));
+                        img.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
+                    });
+
+                    btnClose.addEventListener('click', close);
+                    btnPrev.addEventListener('click', ()=>{ show((current -1 + thumbs.length)%thumbs.length); });
+                    btnNext.addEventListener('click', ()=>{ show((current +1)%thumbs.length); });
+
+                    lightbox.addEventListener('click', (e)=>{
+                        if(e.target.dataset.action === 'close' || e.target === lightbox) close();
+                    });
+
+                    // Progressive thumbnail loader: replace LQIP with real thumbnail when visible
+                    const lazyThumbs = document.querySelectorAll('.gallery__thumb');
+                    if('IntersectionObserver' in window){
+                        const io = new IntersectionObserver((entries, obs) => {
+                            entries.forEach(en => {
+                                if(en.isIntersecting){
+                                    const img = en.target;
+                                    const real = img.dataset.thumb;
+                                    if(real){ img.src = real; img.removeAttribute('data-thumb'); }
+                                    obs.unobserve(img);
+                                }
+                            });
+                        }, {rootMargin: '200px'});
+
+                        lazyThumbs.forEach(img => { if(img.dataset.thumb) io.observe(img); });
+                    } else {
+                        // sin IntersectionObserver, carga inmediata
+                        lazyThumbs.forEach(img => { const real = img.dataset.thumb; if(real) img.src = real; });
+                    }
+                })();
+            </script>
+        </div>
+    </section>
+
+    <!-- Marcas -->
+    <!-- Marcas (Carrusel solo logos) -->
+    <section id="marcas" class="section">
+        <div class="container">
+            <div class="section__head">
+                <h2>Nuestras Marcas</h2>
+                <p>Equipos y partners que respaldan la experiencia MGym.</p>
+            </div>
+
+            <div class="logoCarousel" aria-label="Carrusel de marcas">
+                <button class="lc-btn lc-btn--prev" type="button" aria-label="Anterior">
+                    ‹
+                </button>
+
+                <div class="lc-viewport" id="brandsViewport">
+                    <div class="lc-track" id="brandsTrack">
+                        <div class="lc-item"><img src="./assets/8223-spirit-fitness_logo.jpg" alt="Marca 1"
+                                loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/life-fitness-decal-white.jpg" alt="Marca 2"
+                                loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/startrac.jpg" alt="Marca 3" loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/Technogym.jpg" alt="Marca 4" loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/hammer-strength.png" alt="Marca 4" loading="lazy"></div>
+
+                        <!-- Duplica si quieres que el carrusel se sienta más "largo" -->
+                        <div class="lc-item"><img src="./assets/8223-spirit-fitness_logo.jpg" alt="Marca 1"
+                                loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/life-fitness-decal-white.jpg" alt="Marca 2"
+                                loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/startrac.jpg" alt="Marca 3" loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/Technogym.jpg" alt="Marca 4" loading="lazy"></div>
+                        <div class="lc-item"><img src="./assets/hammer-strength.png" alt="Marca 4" loading="lazy"></div>
+                    </div>
+                </div>
+
+                <button class="lc-btn lc-btn--next" type="button" aria-label="Siguiente">
+                    ›
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Membresías -->
+    <section id="membresias" class="section">
+        <div class="container">
+            <div class="section__head">
+                <h2>Membresías</h2>
+                <p>Elige entre membresías por duración o paquetes por horas. Precios y vigencia pueden variar.</p>
+            </div>
+
+            <div class="plans">
+                <!-- Plan 1 -->
+                <article class="plan card">
+                    <div class="plan__top">
+                        <div class="plan__tag">Más popular</div>
+                        <h3 class="plan__name">Mensual</h3>
+                        <div class="plan__price">Consultar</div>
+                        <div class="plan__sub muted">Acceso por 30 días</div>
+                    </div>
+                    <ul class="plan__list">
+                        <li>Acceso a sala de máquinas</li>
+                        <li>Soporte de instructores internos (2)</li>
+                        <li>Horarios flexibles</li>
+                        <li>Renovación simple</li>
+                    </ul>
+                    <button class="btn btn--block" type="button" onclick="openChat()">Quiero este plan</button>
+                </article>
+
+                <!-- Plan 2 -->
+                <article class="plan card">
+                    <div class="plan__top">
+                        <h3 class="plan__name">Trimestral</h3>
+                        <div class="plan__price">Consultar</div>
+                        <div class="plan__sub muted">Mejor ahorro por continuidad</div>
+                    </div>
+                    <ul class="plan__list">
+                        <li>Acceso a sala de máquinas</li>
+                        <li>Seguimiento de progreso (básico)</li>
+                        <li>Prioridad en horarios (según aforo)</li>
+                        <li>Ideal para objetivos 8–12 semanas</li>
+                    </ul>
+                    <button class="btn btn--block" type="button" onclick="openChat()">Consultar beneficios</button>
+                </article>
+
+                <!-- Plan 3 -->
+                <article class="plan card">
+                    <div class="plan__top">
+                        <h3 class="plan__name">Anual</h3>
+                        <div class="plan__price">Consultar</div>
+                        <div class="plan__sub muted">Para constancia y resultados</div>
+                    </div>
+                    <ul class="plan__list">
+                        <li>Acceso por 12 meses</li>
+                        <li>Mejor tarifa (según campaña)</li>
+                        <li>Congelamiento de membresía (según condiciones)</li>
+                        <li>Ideal para rutina sostenida</li>
+                    </ul>
+                    <button class="btn btn--block" type="button" onclick="openChat()">Hablar con un asesor</button>
+                </article>
+
+                <!-- Plan 4 (Horas) -->
+                <article class="plan card plan--hours">
+                    <div class="plan__top">
+                        <h3 class="plan__name">Paquete por Horas</h3>
+                        <div class="plan__price">Consultar</div>
+                        <div class="plan__sub muted">Clases libres (horas)</div>
+                    </div>
+                    <ul class="plan__list">
+                        <li>Compra de horas según tu necesidad</li>
+                        <li>Perfecto si entrenas “por sesiones”</li>
+                        <li>Compatible con instructores externos*</li>
+                        <li>Control de consumo por asistencia</li>
+                    </ul>
+                    <button class="btn btn--block" type="button" onclick="openChat()">Cotizar paquete</button>
+                    <small class="muted">*Sujeto a coordinación y políticas del gimnasio.</small>
+                </article>
+            </div>
+
+            <div class="plansNote card">
+                <div class="plansNote__left">
+                    <strong>¿No sabes cuál elegir?</strong>
+                    <div class="muted">Cuéntanos tu objetivo y te recomendamos la mejor opción.</div>
+                </div>
+                <div class="plansNote__right">
+                    <button class="btn" type="button" onclick="openChat()">Recomiéndame un plan</button>
+                    <a class="btn btn--ghost" href="#ubicacion">Ver ubicación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contacto / CTA final -->
+    <section id="contacto" class="section section--cta">
+        <div class="container cta">
+            <div>
+                <h2>¿Te ayudamos a elegir tu plan?</h2>
+                <p>Abre el chat para hablar con el agente.</p>
+            </div>
+
+            <div class="cta__actions">
+                <button class="btn" type="button" onclick="openChat()">Abrir chat</button>
+                <a class="btn btn--ghost" href="#home">Volver arriba</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="./assets/logo2.png" alt="MGym" />
+                <div>
+                    <strong>MGym</strong>
+                    <div class="muted">Miraflores · Lima</div>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <a href="#home">Home</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#galeria">Galería</a>
+                <a href="#marcas">Marcas</a>
+            </div>
+
+            <div class="muted">© <span id="y"></span> MGym. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante -->
+    <button class="fab" type="button" onclick="openChat()" aria-label="Abrir chat">
+        💬 Hablar ahora
+    </button>
+
+    <script>
+        // Año en footer
+        document.getElementById('y').textContent = new Date().getFullYear();
+
+        // Abrir el widget desde botones
+        function openChat() {
+            if (window.$chatwoot) window.$chatwoot.toggle("open");
+        }
+    </script>
+
+    <!-- ✅ Snippet oficial de Chatwoot (TU INBOX WEB) -->
+    <!-- <script>
+        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Chatea con nosotros" };
+        (function (d, t) {
+            var BASE_URL = "https://elastica-chatwoot.3haody.easypanel.host";
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function () {
+                window.chatwootSDK.run({
+                    websiteToken: 'fY3uUp1B1yzxNVh4AuEuTGuq',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document, "script");
+    </script> -->
+    <script>
+        (function (d, t) {
+            if (window.__CHATWOOT_LOADED__) return;
+            window.__CHATWOOT_LOADED__ = true;
+
+            var BASE_URL = "https://elastica-chatwoot.3haody.easypanel.host";
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+
+            g.onload = function () {
+                window.chatwootSDK.run({
+                    websiteToken: 'fY3uUp1B1yzxNVh4AuEuTGuq',
+                    baseUrl: BASE_URL
+                });
+            };
+        })(document, "script");
+    </script>
+
+    <script>
+        (function () {
+            const viewport = document.getElementById('brandsViewport');
+            const prevBtn = document.querySelector('.lc-btn--prev');
+            const nextBtn = document.querySelector('.lc-btn--next');
+            if (!viewport || !prevBtn || !nextBtn) return;
+
+            const step = () => Math.max(240, Math.floor(viewport.clientWidth * 0.6));
+
+            prevBtn.addEventListener('click', () => {
+                viewport.scrollBy({ left: -step(), behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                viewport.scrollBy({ left: step(), behavior: 'smooth' });
+            });
+
+            // Autoscroll suave (pausa con hover o touch)
+            let auto = setInterval(() => {
+                viewport.scrollBy({ left: 220, behavior: 'smooth' });
+
+                // Si llega al final, vuelve al inicio (loop simple)
+                const nearEnd = viewport.scrollLeft + viewport.clientWidth >= viewport.scrollWidth - 10;
+                if (nearEnd) viewport.scrollTo({ left: 0, behavior: 'smooth' });
+            }, 2500);
+
+            const stop = () => { if (auto) { clearInterval(auto); auto = null; } };
+            const start = () => {
+                if (!auto) {
+                    auto = setInterval(() => {
+                        viewport.scrollBy({ left: 220, behavior: 'smooth' });
+                        const nearEnd = viewport.scrollLeft + viewport.clientWidth >= viewport.scrollWidth - 10;
+                        if (nearEnd) viewport.scrollTo({ left: 0, behavior: 'smooth' });
+                    }, 2500);
+                }
+            };
+
+            viewport.addEventListener('mouseenter', stop);
+            viewport.addEventListener('mouseleave', start);
+            viewport.addEventListener('touchstart', stop, { passive: true });
+            viewport.addEventListener('touchend', start, { passive: true });
+        })();
+    </script>
+
+</body>
+
+</html>
